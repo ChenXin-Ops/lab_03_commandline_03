@@ -34,8 +34,9 @@ Follow the instructions line-by-line.
 
 $ touch foo.txt
 $ ls
-Copy and paste the output below.
-----------
+root@DESKTOP-74C1NE3:/home/ChenXinLin/mtec1002-lab-03# touch foo.txt
+root@DESKTOP-74C1NE3:/home/ChenXinLin/mtec1002-lab-03# ls
+books  foo.txt  logs  logs.tar.gz  my_files  web
 
 
 
@@ -43,15 +44,22 @@ Copy and paste the output below.
 7. Create another new file using touch.
 
 $ touch bar.txt
-----------
-
+root@DESKTOP-74C1NE3:/home/ChenXinLin/mtec1002-lab-03# ls
+bar.txt  books  foo.txt  logs  logs.tar.gz  my_files  web
 
 
 ==========
 8. List the files in this directory using the flag that gives the most details.
 
-Copy and paste the output below.
-----------
+root@DESKTOP-74C1NE3:/home/ChenXinLin/mtec1002-lab-03# ls -l
+total 8
+-rw-r--r-- 1 root root     0 Oct  7 15:26 bar.txt
+drwxr-xr-x 1  501 staff 4096 Sep 23 19:58 books
+-rw-r--r-- 1 root root     0 Oct  7 15:25 foo.txt
+drwxr-xr-x 1  501 staff 4096 Sep 23 19:58 logs
+-rw-r--r-- 1 root root  4267 Sep 23 20:23 logs.tar.gz
+drwxr-xr-x 1 root root  4096 Oct  7 15:24 my_files
+drwxr-xr-x 1  501 staff 4096 Feb 13  2013 web
 
 
 
@@ -60,7 +68,8 @@ Copy and paste the output below.
 
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
-----------
+root@DESKTOP-74C1NE3:/home/ChenXinLin/mtec1002-lab-03# mkdir baz.txt
+root@DESKTOP-74C1NE3:/home/ChenXinLin/mtec1002-lab-03# ls
 
 
 
@@ -68,8 +77,10 @@ Write the command that you used to copy the file.  Additionally, copy and paste 
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
-----------
-==========
+bar.txt  baz.txt  books  foo.txt  logs  logs.tar.gz  my_files  web
+root@DESKTOP-74C1NE3:/home/ChenXinLin/mtec1002-lab-03# rmdir bar.txt
+root@DESKTOP-74C1NE3:/home/ChenXinLin/mtec1002-lab-03# ls
+baz.txt  books  foo.txt  logs  logs.tar.gz  my_files  web
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
@@ -89,7 +100,12 @@ Write the command that you used to move the file.  Copy and paste the output of 
 13. Try removing the directory called my_files using rmdir.
 
 Write out the command that you used and what happened.
-----------
+baz.txt  books  foo.txt  logs  logs.tar.gz  my_files  web
+root@DESKTOP-74C1NE3:/home/ChenXinLin/mtec1002-lab-03# rmdir my_files
+root@DESKTOP-74C1NE3:/home/ChenXinLin/mtec1002-lab-03# ls
+baz.txt  books  foo.txt  logs  logs.tar.gz  web
+
+*it removes the specific dicrectory using rmdir. 
 
 
 
@@ -97,7 +113,8 @@ Write out the command that you used and what happened.
 14. Try removing the directory called my_files using rm.
 
 Write out the command that you used and what happened.
-----------
+root@DESKTOP-74C1NE3:/home/ChenXinLin/mtec1002-lab-03#rm my_files
+it only removes files no directory 
 
 
 
